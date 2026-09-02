@@ -618,9 +618,9 @@ export default definePlugin({
 
         return (
             <ScrollerThin
-                className={classes(TabBarClasses.tabPanelScroller, !isLegacy && "vc-mutual-interactions-scroller")}
-                fade={true}
+                className={classes(TabBarClasses.tabPanelScroller, "vc-mutual-interactions-scroller", !isLegacy && "vc-mutual-interactions-scroller-v2")}
                 onClose={onClose}
+                style={{ minHeight: 0 }}
             >
                 {loading
                     ? (
@@ -631,7 +631,11 @@ export default definePlugin({
                         </EmptyState>
                     )
                     : messages.length
-                        ? renderInteractionGroups(messages, onClose)
+                        ? (
+                            <div className="vc-mutual-interactions-list">
+                                {renderInteractionGroups(messages, onClose)}
+                            </div>
+                        )
                         : <EmptyState>No messages from this person mention you</EmptyState>
                 }
             </ScrollerThin>

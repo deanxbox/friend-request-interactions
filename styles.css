@@ -7,13 +7,52 @@
 }
 
 .vc-mutual-interactions-scroller {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     gap: 12px;
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
+    scrollbar-color: var(--scrollbar-thin-thumb) var(--scrollbar-thin-track);
+    scrollbar-width: thin;
+}
+
+.vc-mutual-interactions-scroller::-webkit-scrollbar {
+    width: 8px;
+}
+
+.vc-mutual-interactions-scroller::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: var(--scrollbar-thin-thumb);
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+.vc-mutual-interactions-scroller::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-thin-track);
+}
+
+.vc-mutual-interactions-scroller::-webkit-scrollbar-button,
+.vc-mutual-interactions-group-messages::-webkit-scrollbar-button {
+    display: none;
+}
+
+.vc-mutual-interactions-scroller-v2 {
     margin-inline-start: -12px;
+}
+
+.vc-mutual-interactions-list {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .vc-mutual-interactions-group {
     border: 1px solid var(--background-mod-strong);
     border-radius: 8px;
+    flex: none;
     overflow: hidden;
 }
 
@@ -84,13 +123,39 @@
 
 .vc-mutual-interactions-group-messages {
     border-top: 1px solid var(--background-mod-strong);
+    display: flex;
+    flex-direction: column;
+    max-height: 260px;
+    min-height: 0;
+    overscroll-behavior-y: contain;
+    overflow-y: auto;
+    scrollbar-color: var(--scrollbar-thin-thumb) var(--scrollbar-thin-track);
+    scrollbar-width: thin;
+}
+
+.vc-mutual-interactions-group-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+.vc-mutual-interactions-group-messages::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: var(--scrollbar-thin-thumb);
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+.vc-mutual-interactions-group-messages::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-thin-track);
 }
 
 .vc-mutual-interactions-row {
     align-items: flex-start;
     border-radius: 0;
     display: flex;
+    flex-shrink: 0;
     gap: 8px;
+    height: auto;
+    min-height: 0;
     padding: 8px 10px;
 }
 
