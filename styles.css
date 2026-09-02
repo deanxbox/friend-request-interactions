@@ -1,0 +1,132 @@
+.vc-mutual-interactions-modal-tab-bar {
+    gap: 0;
+}
+
+.vc-mutual-interactions-modal-v2-tab-bar {
+    --space-xl: 16px;
+}
+
+.vc-mutual-interactions-scroller {
+    gap: 12px;
+    margin-inline-start: -12px;
+}
+
+.vc-mutual-interactions-group {
+    border: 1px solid var(--background-mod-strong);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.vc-mutual-interactions-group-header {
+    align-items: center;
+    background: var(--background-mod-subtle);
+    display: flex;
+    gap: 8px;
+    padding: 8px 10px;
+}
+
+.vc-mutual-interactions-group-header:hover,
+.vc-mutual-interactions-row:hover {
+    background: var(--background-modifier-hover);
+}
+
+.vc-mutual-interactions-guild-icon,
+.vc-mutual-interactions-author-avatar {
+    flex-shrink: 0;
+    height: 24px;
+    object-fit: cover;
+    width: 24px;
+}
+
+.vc-mutual-interactions-guild-icon {
+    border-radius: 8px;
+}
+
+.vc-mutual-interactions-guild-icon-fallback {
+    align-items: center;
+    background: var(--background-mod-strong);
+    color: var(--text-strong);
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.vc-mutual-interactions-group-name {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vc-mutual-interactions-count {
+    background: var(--background-mod-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 18px;
+    min-width: 18px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.vc-mutual-interactions-chevron {
+    color: var(--interactive-muted);
+    flex-shrink: 0;
+    transition: transform .15s ease;
+}
+
+.vc-mutual-interactions-chevron-expanded {
+    transform: rotate(90deg);
+}
+
+.vc-mutual-interactions-group-messages {
+    border-top: 1px solid var(--background-mod-strong);
+}
+
+.vc-mutual-interactions-row {
+    align-items: flex-start;
+    border-radius: 0;
+    display: flex;
+    gap: 8px;
+    padding: 8px 10px;
+}
+
+.vc-mutual-interactions-author-avatar {
+    border-radius: 50%;
+}
+
+.vc-mutual-interactions-details {
+    min-width: 0;
+    width: 100%;
+}
+
+.vc-mutual-interactions-author-row {
+    align-items: baseline;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.vc-mutual-interactions-author {
+    color: var(--text-strong);
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vc-mutual-interactions-author-row > :last-child {
+    flex-shrink: 0;
+}
+
+.vc-mutual-interactions-context {
+    color: var(--text-muted);
+}
+
+.vc-mutual-interactions-preview {
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
