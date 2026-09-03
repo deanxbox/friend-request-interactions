@@ -64,9 +64,11 @@
     padding: 8px 10px;
 }
 
-.vc-mutual-interactions-group-header:hover,
-.vc-mutual-interactions-row:hover {
+.vc-mutual-interactions-group-header:hover {
     background: var(--background-modifier-hover);
+}
+.vc-mutual-interactions-row:hover {
+    background: var(--message-background-hover);
 }
 
 .vc-mutual-interactions-guild-icon,
