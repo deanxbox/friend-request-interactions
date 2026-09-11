@@ -58,7 +58,6 @@
 
 .vc-mutual-interactions-group-header {
     align-items: center;
-    background: var(--background-mod-subtle);
     display: flex;
     gap: 8px;
     padding: 8px 10px;
